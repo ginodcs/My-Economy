@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Mi Economía</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -21,9 +21,13 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Inicio", "Index", "Inicio")</li>
+                    <li>@Html.ActionLink("Mi Cuenta", "Index", "MyAccount")</li>
+                    <li>@Html.ActionLink("Usuarios", "Index", "User")</li>
+                    @*<li>@Html.ActionLink("Ingresos", "Index", "Ingreso")</li>
+        <li>@Html.ActionLink("Gastos", "Index", "Gasto")</li>
+        <li>@Html.ActionLink("Balances Mensual", "Index", "Balance Mensual")</li>
+        <li>@Html.ActionLink("Años Anteriores", "Index", "Año Anteriores")</li>*@
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -33,7 +37,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Mi Economía</p>
         </footer>
     </div>
 
